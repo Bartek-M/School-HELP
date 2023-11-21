@@ -1,0 +1,4 @@
+Rambo 5 True
+Reks 4 False
+Apollo 9 True
+Burek 10 False
