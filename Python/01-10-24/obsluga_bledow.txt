@@ -1,0 +1,28 @@
+OBSŁUGIWANIE BŁĘDÓW
+
+https://docs.python.org/3/tutorial/errors.html
+
+Instrukcje:
+- napisz program wykonujący poniższe polecenia
+- zachowaj program jako nazwisko_data na dysku Z:
+- każde polecenie w programie poprzedź komentarzem z jego numerem
+- umieszczaj informacje dotyczące realizowanych punktów oraz wyświetlanych danych 
+- nie korzystaj z warunków do sprawdzania czy błąd nie wystąpi
+- wykorzystaj wszystkie znane elementy obsługi błędów (try, except, else, finally)
+- po zapisaniu każdego polecenia upewnij się, że wszystko działa
+- jak skończysz skopiu program na dysk do_zapisu
+- w razie wątpliwości - pytaj; powodzenia :)
+
+
+1. Stwórz program, który prosi użytkownika o wprowadzenie dwóch liczb i dzieli je. Obsłuż błąd dzielenia przez zero.
+
+2. Poproś użytkownika o wprowadzenie liczby, a następnie spróbuj przekształcić ją na typ int. Obsłuż błąd, jeśli wprowadzony tekst nie jest liczbą. Na koniec wypisz podaną liczbę podniesioną do kwadratu.
+
+3. Napisz program, który otwiera plik o podanej przez użytkownika nazwie. Jeśli plik nie istnieje, obsłuż ten błąd.
+
+4. Zdefiniuj listę i poproś użytkownika o podanie indeksu. Spróbuj wydobyć element o tym indeksie. Obsłuż błąd, gdy indeks przekracza długość listy.
+
+5. Poproś użytkownika o podanie 5 literowego wyrazu. Jeśli wyraz nie będzie miał 5 liter, wywołaj błąd wartości z parametrem 'Niepoprawna długość słowa'. Obsłuż błąd i wypisz go na ekranie.
+
+6. Poproś użytkownika o wprowadzenie dwóch liczb. Następnie daj mu wybór operacji (dodawanie, odejmowanie, mnożenie, dzielenie). Utwórz, a następnie wywołaj funkcje IN_calc(), której parametrami będą (licz_1, licz_2, operacja). Obsłuż błąd, gdy do funkcji zostanie wprowadzone coś innego niż liczby lub będzie dzielenie przez 0.
+
