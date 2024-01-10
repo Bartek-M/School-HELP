@@ -6,33 +6,43 @@ using namespace std;
 
 int main() {
     const string file_name = "./plik.txt";
-    int n = 5;
-    string write_text, read_text;
+    const int n = 5;
+    string line;
 
-    cout << "Podaj tekst do wpisania w pliku: ";
-    cin >> write_text;
+    cout << "Operacje na plikach\n\n";
 
-    // Zapisywanie do pliku
-    ofstream file_1(file_name);
+    // Tworzenie pliku
+    fstream file_1;
+    file_1.open(file_name, ios::out);
 
-    for (int i = 0; i < n; i++) {
-        file_1 << "[" << i << "]" << write_text << endl;
+    if (file_1.is_open()) {
+        file_1 << "Hello World!\n\n";
+        file_1 << "Learning file operations\n";
+        file_1.close();
+        cout << "Zapisano plik\n";
     }
 
-    file_1.close();
+    // Dopisywanie do pliku
+    file_1.open(file_name, ios::app);
 
-    cout << "Zapisano dane do pliku\n";
-
-    // Odczytywanie z pliku
-    ifstream file_2(file_name);
-    cout << "\nOdczytano plik, zawartosc:\n";
-
-    while (file_2) {
-        file_2 >> read_text;
-        cout << read_text << "\n";
+    if (file_1.is_open()) {
+        file_1 << "Test dopisywania do pliku\n";
+        file_1.close();
+        cout << "Dopisano do pliku\n";
     }
 
-    file_2.close();
+    // Czytanie z pliku
+    file_1.open(file_name, ios::in);
+
+    if (file_1.is_open()) {
+        cout << "\nCzytanie pliku:\n";
+
+        while (getline(file_1, line)) {
+            cout << line << "\n";
+        }
+
+        file_1.close();
+    }
 
 
     return 0;
