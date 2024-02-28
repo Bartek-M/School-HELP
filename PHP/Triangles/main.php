@@ -36,7 +36,7 @@
         # FUNCTIONS
         function pole_tr($boki) {
             $s = ($boki[0] + $boki[1] + $boki[2]) / 2;
-            return sprintf("%.3f", sqrt($s * ($s - $boki[0]) * ($s - $boki[1]) * ($s - $boki[1])));
+            return sprintf("%.3f", sqrt($s * ($s - $boki[0]) * ($s - $boki[1]) * ($s - $boki[2])));
         }
 
         function obw_tr($boki) {
