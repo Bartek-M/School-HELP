@@ -34,13 +34,13 @@
     <h1>Bartosz Mroczkowski 3Ti</h1>
     <?php
         # FUNCTIONS
-        function pole_tr($boki) {
-            $s = ($boki[0] + $boki[1] + $boki[2]) / 2;
-            return sprintf("%.3f", sqrt($s * ($s - $boki[0]) * ($s - $boki[1]) * ($s - $boki[2])));
+        function pole_tr($a, $b, $c) {
+            $s = ($a + $b + $c) / 2;
+            return sqrt($s * ($s - $a) * ($s - $b) * ($s - $c));
         }
 
-        function obw_tr($boki) {
-            return $boki[0] + $boki[1] + $boki[2];
+        function obw_tr($a, $b, $c) {
+            return $a + $b + $c;
         }
 
         function boki_tr($start, $end) {
@@ -79,15 +79,19 @@
 
                 for ($i = 0; $i < N; $i++) {
                     $boki = boki_tr(START, END);
-                    $pole = pole_tr($boki);
-                    $obw = obw_tr($boki);
+                    $a = $boki[0];
+                    $b = $boki[1];
+                    $c = $boki[2];
+
+                    $pole = pole_tr($a, $b, $c);
+                    $obw = obw_tr($a, $b, $c);
 
                     echo "<tr>";
-                    echo "<td>{$boki[0]}</td>";
-                    echo "<td>{$boki[1]}</td>";
-                    echo "<td>{$boki[2]}</td>";
-                    echo "<td>{$pole}</td>";
-                    echo "<td>{$obw}</td>";
+                    echo "<td>{$a}</td>";
+                    echo "<td>{$b}</td>";
+                    echo "<td>{$c}</td>";
+                    echo "<td>" . number_format($pole, 2) . "</td>";
+                    echo "<td>" . number_format($obw, 3) . "</td>";
                     echo "</tr>";
                 }
             ?>
