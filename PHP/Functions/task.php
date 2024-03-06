@@ -28,7 +28,7 @@
 
             while ($num != 0) {
                 echo $num % 10 . ", ";
-                $num = ($num / 10) | 0;
+                $num = floor($num / 10);
             }
         }
 
@@ -37,7 +37,7 @@
 
             while ($num != 0) {
                 $suma += $num % 10;
-                $num = ($num / 10) | 0;
+                $num = floor($num / 10);
             }
 
             return $suma;
