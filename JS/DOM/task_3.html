@@ -1,0 +1,39 @@
+<!-- Dodaj na stronie dwa zdjęcia i przycisk, który będzie zamieniał je miejscami. Utwórz jeszcze jeden przycisk, który będzie pokazywał i chował dodatkowe zdjęcie.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            font-family: monospace;
+        }
+
+        #img-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #img-wrapper img {
+            height: 200px;
+        }
+
+        #img-3 {
+            display: none;
+        }
+    </style>
+    <script src="./task_3.js"></script>
+</head>
+<body>
+    <div id="img-wrapper">
+        <img id="img-1" src="https://sites.breakingmedia.com/uploads/sites/3/2023/01/230119_DVIDS_F-15_4375667-scaled-e1674139781814.jpg" alt="F15">
+
+        <img id="img-3" src="https://www.militarytimes.com/resizer/_ohqL9KfaKduyZ24tXkHnD3iG_c=/arc-photo-archetype/arc3-prod/public/SD6WFGO27JGWZKO2XIYV2HGLQE.jpg" alt="F22">
+
+        <img id="img-2" src="https://theaviationgeekclub.com/wp-content/uploads/2020/12/VF-14-F-14.jpg" alt="F14">
+    </div>
+    <button id="zmien-obrazki">Zamień obrazki</button>
+    <button id="pokaz-obrazek">Pokaż obrazek 3</button>
+</body>
+</html>

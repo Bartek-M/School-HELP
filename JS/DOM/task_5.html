@@ -1,0 +1,32 @@
+<!--Zadanie 2
+Na stronie wyświetla się przycisk. Gdy najedziesz na niego kursorem, pojawi się obrazek Mikołaja, a obok niego wyświetli się tekst "Wybierz prezent 1, 2, 3". Po naciśnięciu klawisza "1" na klawiaturze, obok Mikołaja pojawi się zdjęcie prezentu 1. Analogicznie, po naciśnięciu "2" i "3" pojawią się zdjęcia prezentów 2 i 3. Strona powinna być podzielona na dwa div'y.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            font-family: monospace;
+        }
+        
+        .wrapper {
+            display: flex;
+        }
+
+        .wrapper div {
+            border: 1px solid black;
+            width: 50%;
+        }
+    </style>
+    <script src="./task_5.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="lewy"></div>
+        <div id="prawy"></div>
+    </div>
+    <button id="pokaz-elementy">Pokaż</button>
+</body>
+</html>
