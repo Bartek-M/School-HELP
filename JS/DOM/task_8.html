@@ -1,0 +1,33 @@
+<!-- 6. Strona jest podzielona na dwa div'y: prawy i lewy. Na stronie znajduje się przycisk. Po naciśnięciu przycisku, kolor prawego diva oraz kolor samego przycisku zmieniają się. Dodatkowo na stronie znajduje się tekst, a po najechaniu na niego kursorem, zmienia się czcionka tekstu. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            font-family: monospace;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .wrapper div {
+            border: 1px solid black;
+            width: 50%;
+            height: 100px;
+        }
+    </style>
+    <script src="./task_8.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="lewy"></div>
+        <div id="prawy"></div>
+    </div>
+    <button id="przycisk-1">Zmiana</button>
+    <p id="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, perferendis.</p>
+</body>
+</html>

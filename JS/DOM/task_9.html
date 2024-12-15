@@ -1,0 +1,30 @@
+<!-- 7. Na stronie znajduje się duży prostokąt umieszczony na środku. W tym prostokącie wyświetla się liczba odpowiadająca wartości kodu ASCII litery, którą naciśniesz na klawiaturze. W kodzie należy uwzględnić obsługę zdarzenia dla naciśniętych klawiszy i przekształcić je na odpowiednią liczbę ASCII -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            font-family: monospace;
+        }
+
+        #prost {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 150px;
+            background-color: aqua;
+            text-align: center;
+            font-size: 4rem;
+        }
+    </style>
+    <script src="./task_9.js"></script>
+</head>
+<body>
+    <div id="prost"></div>
+</body>
+</html>

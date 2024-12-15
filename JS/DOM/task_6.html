@@ -1,0 +1,64 @@
+<!--Zadanie 4 - Kafelki -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            font-family: monospace;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .wrapper div {
+            min-width: 64px;
+            min-height: 64px;
+            background-color: grey;
+            cursor: pointer;
+        }
+    </style>
+    <script src="./task_6.js"></script>
+</head>
+<body>
+    <h1>Kafelki</h1>
+
+    <!-- a) Na stronie znajduje się 6 kwadratów. Po kliknięciu w dowolny z nich, jego kolor zmienia się na czerwony. Należy użyć odpowiednich tagów HTML do realizacji tego zadania. -->
+    <h2>a)</h2>
+    <div class="wrapper" id="kafelki-a">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- b) Na stronie znajduje się 6 kafelków. Po kliknięciu w dowolny z nich, jego kolor zmienia się na czerwony. Jeśli klikniesz w inny kafelek, jego kolor zmieni się na czerwony, a poprzedni znowu stanie się szary, jak było na początku. -->
+    <h2>b)</h2>
+    <div class="wrapper" id="kafelki-b">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- c) Na stronie znajduje się 6 kafelków. Po kliknięciu w dowolny z nich, jego kolor zmienia się na czerwony. Jeśli klikniesz w inny kafelek, jego kolor zmieni się na czerwony, a poprzedni znowu stanie się szary. Jeżeli przytrzymasz klawisz Ctrl i klikniesz na kilka kafelków, możesz zaznaczyć je na czerwono jednocześnie. -->
+    <h2>c)</h2>
+    <div class="wrapper" id="kafelki-c">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
